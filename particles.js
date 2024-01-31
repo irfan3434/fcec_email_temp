@@ -20,10 +20,10 @@ var pJS = function(tag_id, params){
         }
       },
       color: {
-        value: '#0056b3'
+        value: ['#0056b3', '#00b359', '#b30000']
       },
       shape: {
-        type: 'circle',
+        type: ['circle', 'triangle', 'polygon'],
         stroke: {
           width: 0,
           color: '#0056b3'
@@ -56,7 +56,7 @@ var pJS = function(tag_id, params){
           size_min: 0,
           sync: false
         }
-      },
+      }, 
       line_linked: {
         enable: true,
         distance: 100,
@@ -66,9 +66,9 @@ var pJS = function(tag_id, params){
       },
       move: {
         enable: true,
-        speed: 2,
-        direction: 'none',
-        random: false,
+        speed: 4,
+        direction: 'bottom',
+        random: true,
         straight: false,
         out_mode: 'out',
         bounce: false,
